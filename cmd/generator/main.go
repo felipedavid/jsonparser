@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if len(os.Args) != 3 {
-		fmt.Fprintf(os.Stderr, "Usage: ./gen <seed> <n_points>\n")
+		fmt.Fprintf(os.Stderr, "Usage: ./cmd <seed> <n_points>\n")
 		return
 	}
 
@@ -37,5 +37,5 @@ func main() {
 		fmt.Print("\t")
 		fmt.Printf(`{"x0":%v, "y0":%v, "x1":%v, "y1":%v}`, x0, y0, x1, y1)
 	}
-	fmt.Print("\n]\n")
+	fmt.Print("\n]}\n")
 }
